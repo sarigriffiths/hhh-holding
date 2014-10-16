@@ -4,18 +4,21 @@
 @charset "utf-8";
 
 
+// Importing font
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400);
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: 'Roboto Slab', Georgia, Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #222;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #338d6f;
+$site-title-color: #fff;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -24,6 +27,10 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$mobile:		   480px;
+$tablet:           800px;
+$desktop:          1024px;
+$wide:             1280px;
 
 
 // Using media queries with like this:
@@ -34,7 +41,7 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }
