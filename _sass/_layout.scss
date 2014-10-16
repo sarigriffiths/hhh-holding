@@ -11,15 +11,25 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 35px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
+    color: $site-title-color;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $site-title-color;
+    }
+
+    @include media-query($mobile) {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    @include media-query($tablet) {
+        font-size: 60px;
+        line-height: 65px;
     }
 }
 
@@ -233,4 +243,129 @@
             font-size: 18px;
         }
     }
+}
+
+
+.header-wrapper
+{
+    height: 360px;
+    text-align: center;
+    background-image:url('../images/hhh-mobile.jpg');
+    background-repeat:no-repeat;
+    background-position:center top;
+    overflow: hidden;
+
+    h1 {
+        margin-top: 200px;
+    }
+
+    p {
+        color: $site-title-color;
+        margin-top: 1em;
+        padding: 0 20px;
+
+        @include media-query($mobile) {
+            font-size: 1.125em;
+        }
+    }
+
+    @include media-query($mobile) {
+        background-image:url('../images/hhh-tablet.jpg');
+    }
+
+    @include media-query($tablet) {
+        background-image:url('../images/hhh-desktop.jpg');
+    }
+
+    @include media-query($desktop) {
+        background-image:url('../images/hhh-large.jpg');
+    }
+
+    @include media-query($wide) {
+        background-size: 100%;
+    }
+}
+
+.main {
+    .content-wrapper {
+
+        padding: 0 20px;
+        margin: 40px auto;
+        max-width: 628px;
+
+        .intro {
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 50px;
+            color: $brand-color;
+        }
+
+        .contact-cta {
+            text-align: center;
+            font-size: 1.125em;
+            padding-bottom: 25px;
+            border-bottom: solid 1px $brand-color;
+
+            a {
+                font-weight: 500;
+            }
+        }
+
+        .address {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 80px;
+
+            strong {
+                font-weight: 500;
+            }
+
+            .social {
+                padding-left: 5px;
+                padding-right: 5px;
+
+                .fa {
+                    color: $brand-color;
+                }
+
+                @include media-query($mobile) {
+                    display: inline-block;
+                    &.first {
+                        a {
+                            margin-right: 15px;
+                        }
+                    }
+                    &.first::after {
+                        content: "|";
+                    }
+                }
+                
+            }
+
+        }
+
+        .disclaimer {
+            text-align: center;
+            margin-bottom: 80px;
+
+            a {
+                font-weight: 500;
+            }
+
+            .logos {
+                a {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+            }
+        }
+    }
+    
 }
