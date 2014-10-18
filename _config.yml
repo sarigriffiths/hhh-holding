@@ -2,10 +2,11 @@
 title: Higham Hill Hub
 email: info@highamhillhub.org.uk
 description: > # this means to ignore newlines until "baseurl:"
-  Higham Hill Hub is an exciting new community space in the heart 
-  of Higham Hill. It is in the former bowls club in Higham Hill Park. 
-  Our facilities include a hall, small kitchen, toilets (including 
-  disabled toilet) and a meeting room.
+  Higham Hill Hub is an exciting new community space in the heart of 
+  Higham Hill. Our facilities include a hall with sprung floor, 
+  small kitchen, toilets (incl disabled toilet), meeting room and a large, 
+  private lawn. The Hub is affordable to hire for everything from 
+  classes to meetings to birthday parties.
 baseurl: "/hhh-holding" # the subpath of your site, e.g. /blog/
 url: "http://sarigriffiths.github.io" # the base hostname & protocol for your site
 twitter_username: 
