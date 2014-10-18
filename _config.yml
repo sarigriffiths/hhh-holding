@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   of Higham Hill. It is in the former bowls club in Higham Hill Park. 
   Our facilities include a hall, small kitchen, toilets (including 
   disabled toilet) and a meeting room.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/hhh-tholding/" # the subpath of your site, e.g. /blog/
 url: "http://sarigriffiths.github.io/" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  sarigriffiths
