@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Our facilities include a hall, small kitchen, toilets (including 
   disabled toilet) and a meeting room.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://sarigriffiths.github.io/" # the base hostname & protocol for your site
+url: "http://sarigriffiths.github.io/hhh-holding/" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  sarigriffiths
 facebook_url: https://www.facebook.com/highamhillhub
