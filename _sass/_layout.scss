@@ -248,16 +248,12 @@
 
 .header-wrapper
 {
-    height: 360px;
-    text-align: center;
-    background-image:url('../images/hhh-mobile.jpg');
+    height: 280px;
+    //text-align: center;
+    background-image: url('../images/hhh-mobile.jpg');
     background-repeat:no-repeat;
     background-position:center top;
     overflow: hidden;
-
-    h1 {
-        margin-top: 200px;
-    }
 
     p {
         color: $site-title-color;
@@ -269,16 +265,68 @@
         }
     }
 
+    .header-content {
+        display: block;
+        padding: 0 40px 20px 40px;
+        margin: 0px auto 40px auto;
+        max-width: 668px;
+        //background-color: #c00;
+        top: 0px;
+        text-align: left;
+
+        h1 {
+            background-image: url('../images/HHH_blue_logo.png');
+            text-indent: -3333px;
+            height: 120px;
+            width: 120px;
+            background-size: 100% 100%;
+            //float:left;
+            display: block;
+        }
+
+        .strapline {
+            padding: 0;
+            margin-top: 20px;
+            width: 240px;
+            .line {
+                display: inline-block;
+                padding: 2px 10px;
+                background-color: #fff;
+                color: #259ae3;
+                font-weight: bold;
+                margin: 0px;
+            }
+
+        }
+
+
+    }
+
+
     @include media-query($mobile) {
         background-image:url('../images/hhh-tablet.jpg');
+        height: 340px;
+        .header-content h1 {
+            height: 160px;
+            width: 160px;
+        }
     }
 
     @include media-query($tablet) {
         background-image:url('../images/hhh-desktop.jpg');
+        height: 355px;
+        .header-content h1 {
+            height: 180px;
+            width: 180px;
+        }
     }
 
     @include media-query($desktop) {
         background-image:url('../images/hhh-large.jpg');
+
+        .header-content {
+            padding: 0px;
+        }
     }
 
     @include media-query($wide) {
@@ -289,21 +337,21 @@
 .main {
     .content-wrapper {
 
-        padding: 0 20px;
-        margin: 40px auto;
-        max-width: 628px;
+        padding: 40px;
+        margin: 0px auto;
+        max-width: 588px;
+        background-color: #fff;
 
         .intro {
-            font-weight: 500;
+            font-weight: bold;
             text-align: center;
             margin-bottom: 30px;
         }
 
         h2 {
+            font-weight: bold;
             text-align: center;
-            text-transform: uppercase;
             margin-top: 50px;
-            color: $brand-color;
         }
 
         .contact-cta {
@@ -313,7 +361,7 @@
             border-bottom: solid 1px $brand-color;
 
             a {
-                font-weight: 500;
+                font-weight: bold;
             }
         }
 
@@ -323,12 +371,12 @@
             margin-bottom: 80px;
 
             strong {
-                font-weight: 500;
+                font-weight: bold;
             }
 
             .social {
-                padding-left: 5px;
-                padding-right: 5px;
+                padding-left: 8px;
+                padding-right: 8px;
 
                 .fa {
                     color: $brand-color;
@@ -336,14 +384,6 @@
 
                 @include media-query($mobile) {
                     display: inline-block;
-                    &.first {
-                        a {
-                            margin-right: 15px;
-                        }
-                    }
-                    &.first::after {
-                        content: "|";
-                    }
                 }
                 
             }
@@ -352,20 +392,25 @@
 
         .disclaimer {
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 20px;
 
             a {
-                font-weight: 500;
+                font-weight: bold;
             }
 
             .logos {
                 a {
-                    margin-left: 10px;
-                    margin-right: 10px;
+                    display: inline-block;
+                    margin: 10px 15px;
                 }
 
             }
         }
+
+        @include media-query($tablet) {
+            margin: 20px auto;
+        }
+
     }
     
 }
